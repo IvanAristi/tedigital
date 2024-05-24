@@ -15,7 +15,7 @@
     background: #536976;  
     background: -webkit-linear-gradient(to right, #292E49, #536976);  
     background: linear-gradient(to right, #292E49, #536976); 
-   
+ 
   }
 
 
@@ -308,8 +308,7 @@ height: 434px;
   top: 200px;
   right: 20px;
   padding: 10px 20px;
-  background-color: white;
-  color: white;
+  background-color: transparent;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -317,9 +316,16 @@ height: 434px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+span {
+  cursor: pointer;
+  color: #fa690c;
+ 
+}
+
 .fixed-span:hover {
-  background-color: cornsilk;
+  background-color: #99B5C8;
   box-shadow: 8px 8px 8px 8px #59491e29;
+ 
 }
 
 
