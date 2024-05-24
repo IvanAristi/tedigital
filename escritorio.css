@@ -14,15 +14,18 @@ header{
 .menu{
     display: none;
 }
+.logo{
+  width: 100vw;  
+}
 
 .logos{
-    width: 10vw;
+    width: 20vw;
 }
 
 nav{
     display: block;
     position: static;
-    width: 90vw;
+    width: 80vw;
     background-color: #293349;
     height: 60px;
     border-radius: 0px;
