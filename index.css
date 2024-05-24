@@ -21,7 +21,8 @@
 
  header{
     position: relative;
-    background-color: hsl(120, 5%, 11%);
+    background-color: #2f294a;
+    background-image: linear-gradient(330deg, #2f294a 0%, #292e49 15%, #29434a 100%);
     height: 50px;
     display: flex;
     flex-wrap: wrap;
