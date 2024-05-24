@@ -339,6 +339,7 @@ footer div{
   display: flex;
   width: 90vw;
   justify-content: center;
+  align-items: center;
 }
 
 footer .correo,
@@ -349,6 +350,8 @@ footer .telefono {
   height: 50px;
   width: 50px;
 }
+
+
 footer .correo{
   background-image:  url('./img/correo.png');
 }
@@ -363,6 +366,7 @@ footer a{
 }
 
 .p1{
+ 
   color: inherit;
   font-weight: bold
 }
