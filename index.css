@@ -160,8 +160,9 @@ color: #09AD32;
 
 
 .seption-1 .cont div{
-  width: 100vw;
+  width: 90vw;
   height: calc(145% - 76px);
+  margin: 0 auto;
   background-image: url(./img/portada.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -349,10 +350,10 @@ footer .telefono {
   width: 50px;
 }
 footer .correo{
-  background-image:  url('./icons8-correo-50.png');
+  background-image:  url('./img/correo.png');
 }
 footer .telefono {
-  background-image:  url('./telefono.png'); 
+  background-image:  url('./img/telefono.png'); 
 }
 
 footer a{
