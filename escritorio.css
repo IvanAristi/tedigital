@@ -19,13 +19,13 @@ header{
 }
 
 .logos{
-    width: 20vw;
+    width: 15vw;
 }
 
 nav{
     display: block;
     position: static;
-    width: 80vw;
+    width: 85vw;
     background-color: #293349;
     height: 60px;
     border-radius: 0px;
@@ -36,7 +36,7 @@ nav{
 nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
    background-color: #293349;
     padding: 0;
     border-radius: 0px;
@@ -47,7 +47,7 @@ nav ul{
 
 nav ul li{
     width: 200px;
-    margin: 10px 15px;
+    margin: 10px auto;
    height: 40px;
    
 }

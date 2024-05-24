@@ -81,13 +81,14 @@ nav a {
 }
 
 #contratar {
-  background-color: #AD6609;
+  background-color: hsl(34, 57%, 42%);
  
   border-radius: 10px;
   
 }
 #contratar:hover{
-  background-color: transparent;
+  background-color: #AD6609;
+
 }
 nav ul li{
   list-style: none;
@@ -97,8 +98,8 @@ font-size: 1.2rem;
    color: white;
    width: 40vw;
    height: 7vh;
-   padding-top: 5px;
-
+   padding: 8px;
+  align-items: center;
    
   }
   nav ul li:hover {
@@ -136,7 +137,6 @@ border-radius: 10px;
   font-size: 1.8rem;
   width: 50vw;
   max-width: 116px;
-color: #09AD32;
   margin: 10px;
 
  
