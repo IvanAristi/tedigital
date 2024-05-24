@@ -36,7 +36,7 @@ nav{
 nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
    background-color: #293349;
     padding: 0;
     border-radius: 0px;
@@ -47,7 +47,7 @@ nav ul{
 
 nav ul li{
     width: 200px;
-    margin: 10px auto;
+    margin: 10px 30px;
    height: 40px;
    
 }
