@@ -48,6 +48,7 @@ background-image: linear-gradient(330deg, #2f294a 0%, #292e49 15%, #29434a 100%)
 nav{
   display: none;
   position: absolute;
+  z-index: 1;
   top: 200px;
   bottom: 0;
   left: 0;
@@ -81,7 +82,7 @@ nav a {
 }
 
 #contratar {
- background-color: #09AD32;
+ background-color: #09ad32;
  
   border-radius: 10px;
   
@@ -103,7 +104,7 @@ font-size: 1.2rem;
    
   }
   nav ul li:hover {
-background-color:   #09AD32;
+background-color:   #AD6609;
 border-radius: 10px;
 
   }
@@ -143,6 +144,7 @@ border-radius: 10px;
 }
 
 .seption-1{
+  position: relative;
   height: 300px;
   width: 100%;
   border: 1px solid transparent;
@@ -158,19 +160,42 @@ border-radius: 10px;
 
   overflow: hidden;
 }
+.seption-1 .cont div::before{
+  position: relative;
+}
 
-
-.seption-1 .cont div{
-  width: 90vw;
-  height: calc(145% - 76px);
-  margin: 0 auto;
-  background-image: url(./img/portada.png);
+.seption-1 .cont div::before{
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  content: "";
+  position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center; 
-  
- 
+  background-position: center;
+  width: 90%;
+  height: 90%;
+  top: 25px; 
+  left: 50%;
+  transform: translateX(-50%);
+  animation: changeImage 7s infinite;
 }
+
+@keyframes changeImage {
+  0%, 33.33% {
+
+    background-image: url('./img/link.jpg');
+  
+  }
+
+  33.34%, 66.66% {
+    background-image: url('./img/hosting.png');
+  }
+  66.67%, 100% {
+    background-image: url('./img/respon.jpg');
+  }
+}
+
+
+
 
 #servicios{
   background: #536976;  /* fallback for old browsers */
@@ -204,19 +229,14 @@ h1{
 }
 .carrusel-1 {
   position: relative;
-  /*
-  background-color: #fa690c;
-  background-image: linear-gradient(43deg, #fa690c 0%, #fab10c 18%, #fa930c 39%, #face0c 80%, #face0c 99%, #fa400c 100%);
-  */
- /* background-color: #cf892d;
-background-image: linear-gradient(180deg, #cf892d 0%, #cf892d 17%, #a5793f 39%, #7a6343 60%, #504639 80%, #33302d 100%);*/
+ 
  
 background: #141E30;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-height: 434px;
-  width: 90vw;
+justify-content: center;
+height: 240px;
+  width: 100%;
   padding: 15px;
   border-radius: 15px;
   margin: 15px auto;
@@ -224,41 +244,16 @@ height: 434px;
 
 .card {
   position: relative;
-}
-
-
-.card::before {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  content: "";
-  position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  margin: 0 auto;
   width: 90%;
-  height: 400px;
-  top: 0; 
-  left: 50%;
-  
-  transform: translateX(-50%);
-  animation: changeImage 7s infinite;
+  height: 90%;
+  background-image: url('./img/portada.png');
 }
 
-@keyframes changeImage {
-  0%, 33.33% {
-
-    background-image: url('./img/link.jpg');
-  
-  }
-
-
-
-  33.34%, 66.66% {
-    background-image: url('./img/hosting.png');
-  }
-  66.67%, 100% {
-    background-image: url('./img/respon.jpg');
-  }
-}
 
 .padre{
   position: relative;
@@ -273,8 +268,7 @@ height: 434px;
   border-radius: 15px;
   height: auto;
   margin: auto;
-  background-color: #fa690c;
-  background-image: linear-gradient(43deg, #fa690c 0%, #fab10c 18%, #fa930c 39%, #face0c 80%, #face0c 99%, #fa400c 100%);
+  background-color: #61AD0A;
   color: white;
   border: 1px solid #ccc;
   padding: 20px;
@@ -374,7 +368,7 @@ footer a{
 
 .p1{
  
-  color: inherit;
+  color: #0A2FAD;
   font-weight: bold
 }
 
