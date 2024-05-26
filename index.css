@@ -145,6 +145,8 @@ border-radius: 10px;
 
 .seption-1{
   position: relative;
+  background-image: url(./img/fondoportada.png);
+  background-repeat: repeat-x;
   height: 300px;
   width: 100%;
   border: 1px solid transparent;
@@ -165,7 +167,6 @@ border-radius: 10px;
 }
 
 .seption-1 .cont div::before{
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   content: "";
   position: absolute;
   background-repeat: no-repeat;
@@ -176,21 +177,21 @@ box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   top: 25px; 
   left: 50%;
   transform: translateX(-50%);
-  animation: changeImage 7s infinite;
+  animation: changeImage 18s infinite;
 }
 
 @keyframes changeImage {
   0%, 33.33% {
 
-    background-image: url('./img/link.jpg');
+    background-image: url('./img/ceo.png');
   
   }
 
   33.34%, 66.66% {
-    background-image: url('./img/hosting.png');
+    background-image: url('./img/hostingg.png');
   }
   66.67%, 100% {
-    background-image: url('./img/respon.jpg');
+    background-image: url('.//img/respons.png');
   }
 }
 
@@ -236,7 +237,7 @@ background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-2
 background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 justify-content: center;
 height: 240px;
-  width: 100%;
+  width: 90vw;
   padding: 15px;
   border-radius: 15px;
   margin: 15px auto;
